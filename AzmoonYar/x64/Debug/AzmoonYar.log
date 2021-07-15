@@ -1,0 +1,8 @@
+﻿  Student.cpp
+F:\projects\TeamProject\AY26\AzmoonYar\Student.h(1978,46): warning C4566: character represented by universal-character-name '\u06CC' cannot be represented in the current code page (1256)
+  main.cpp
+F:\projects\TeamProject\AY26\AzmoonYar\main.cpp(1,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+F:\projects\TeamProject\AY26\AzmoonYar\Student.h(1978,46): warning C4566: character represented by universal-character-name '\u06CC' cannot be represented in the current code page (1256)
+  Generating Code...
+  Form1.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
+  AzmoonYar.vcxproj -> F:\projects\TeamProject\AY26\x64\Debug\AzmoonYar.exe

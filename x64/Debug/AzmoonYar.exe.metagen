@@ -1,0 +1,171 @@
+  AzmoonYar.Form1.resources - Embedded, ContainedInManifestFile, 
+  AzmoonYar.Manager.resources - Embedded, ContainedInManifestFile, 
+  AzmoonYar.Student.resources - Embedded, ContainedInManifestFile, 
+ImageRuntimeVersion: v4.0.30319
+Assembly AzmoonYar, Version=0.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class Person: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Fields:
+    Int32 ExamNumber : Public
+    System.String Name : Public
+    System.String LastName : Public
+    System.String UserName : Public
+    System.String Password : Public
+  Methods:
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig
+Class manager: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Person
+    Void .ctor(System.String, System.String, System.String, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class student: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Person
+    Void .ctor(System.String, System.String, System.String, System.String, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Double Score : Public
+    System.String StudentId : Public
+Class Answers: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(System.String, Boolean): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.String StudentId : Public
+    System.String ExplainTypeGivenAnswer : Public
+    System.String TestTypeGivenAnwser : Public
+    Boolean TrueFalseGivenAnswer : Public
+Class Question: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Boolean, Boolean, Boolean, System.String, System.String, System.String, System.String, System.String, System.String, Double): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Boolean, Boolean, Boolean, System.String, Boolean, Double): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Boolean, Boolean, Boolean, System.String, Double): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Double QuestionScore : Public
+    Boolean TestType : Public
+    Boolean TrueFalseType : Public
+    Boolean ExpalainType : Public
+    System.String TestTypeOption1 : Public
+    System.String TestTypeOption2 : Public
+    System.String TestTypeOption3 : Public
+    System.String TestTypeOption4 : Public
+    System.String QuestionText : Public
+    Boolean TrueFalseAnswer : Public
+    System.String TestAnswer : Public
+    System.Collections.Generic.List`1[Answers] AnswerList IsByValue : Public, InitOnly
+Class Exam: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(System.String, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Boolean isExamined : Public
+    System.String ExamID : Public
+    System.String indexManager : Public
+    Int32 QuestionsNumber : Public
+    System.DateTime StartTime : Public
+    System.DateTime EndTime : Public
+    System.Collections.Generic.List`1[student] AccessedStudentsList IsByValue : Public, InitOnly
+    System.Collections.Generic.List`1[student] DeniedStudentsList IsByValue : Public, InitOnly
+    System.Collections.Generic.List`1[Question] QuestionList IsByValue : Public, InitOnly
+Class Exams: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.Collections.Generic.List`1[Exam] ExamList IsByValue : Public, Static, InitOnly
+Class PersonList: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.Collections.Generic.List`1[manager] ManagerList IsByValue : Public, Static, InitOnly
+    System.Collections.Generic.List`1[student] StudentList IsByValue : Public, Static, InitOnly
+Class AzmoonYar.Student: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 current_question_index : Public
+    Int32 user_student_index : Public
+    Int32 exam_student_index : Public
+    System.String username : Public
+    System.Windows.Forms.Button button5 : Public
+    System.Windows.Forms.TextBox TextBoxStudentLastName : Public
+    System.Windows.Forms.TextBox TextBoxStudentName : Public
+    System.Windows.Forms.TextBox TextBoxStudentSignUpPassword : Public
+    System.Windows.Forms.TextBox TextBoxStudentSignUpUsername : Public
+    System.Windows.Forms.TextBox TextBoxStudentId : Public
+    System.Windows.Forms.Panel PanelStudentExams : Public
+    System.Windows.Forms.Panel PanelExamParticipation : Public
+    System.Windows.Forms.Panel panel8 : Public
+    System.Windows.Forms.Panel PanelTestiAnswers : Public
+    System.Windows.Forms.RadioButton RadioAnswerOption2Truth : Public
+    System.Windows.Forms.RadioButton RadioAnswerOption1Truth : Public
+    System.Windows.Forms.TextBox TextBoxAnswerOption1 : Public
+    System.Windows.Forms.TextBox TextBoxAnswerOption4 : Public
+    System.Windows.Forms.RadioButton RadioAnswerOption4Truth : Public
+    System.Windows.Forms.TextBox TextBoxAnswerOption3 : Public
+    System.Windows.Forms.RadioButton RadioAnswerOption3Truth : Public
+    System.Windows.Forms.TextBox TextBoxAnswerOption2 : Public
+Class AzmoonYar.Manager: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 question_index : Public
+    Int32 answer_index : Public
+    Int32 current_question_index : Public
+    System.String manager_index : Public
+    System.String exam_id : Public
+    Int32 accessed_student_index : Public
+    Int32 exam_index : Public
+    Boolean true_false_answer : Public
+    System.String test_true_answer : Public
+    Boolean firstCreation : Public
+    System.String username : Public
+    System.Windows.Forms.Panel PanelManagerDashboard : Public
+    System.Windows.Forms.Panel PanelManagerSideBarDashboard : Public
+    System.Windows.Forms.Panel PanelManagerSignUp : Public
+    System.Windows.Forms.TextBox TextBoxManageraLastName : Public
+    System.Windows.Forms.TextBox TextBoxManagerName : Public
+    System.Windows.Forms.TextBox TextBoxManagerSignUpPassword : Public
+    System.Windows.Forms.TextBox TextBoxManagerSignUpUsername : Public
+    System.Windows.Forms.Button button5 : Public
+    System.Windows.Forms.Panel PanelCreateExam : Public
+    System.Windows.Forms.TextBox TextBoxQuestionText : Public
+    System.Windows.Forms.RadioButton RadioExplainType : Public
+    System.Windows.Forms.RadioButton RadioTrueFalse : Public
+    System.Windows.Forms.RadioButton RadioTesti : Public
+    System.Windows.Forms.Panel PanrlTrueFalseAnswer : Public
+    System.Windows.Forms.Panel PanelTestiAnswers : Public
+    System.Windows.Forms.TextBox TextBoxOption4 : Public
+    System.Windows.Forms.TextBox TextBoxOption3 : Public
+    System.Windows.Forms.TextBox TextBoxOption2 : Public
+    System.Windows.Forms.TextBox TextBoxOption1 : Public
+    System.Windows.Forms.RadioButton RadioTrueFalseFalse : Public
+    System.Windows.Forms.RadioButton RadioTrueFalseTrue : Public
+    System.Windows.Forms.RadioButton RadioOption4Truth : Public
+    System.Windows.Forms.RadioButton RadioOption3Truth : Public
+    System.Windows.Forms.RadioButton RadioOption2Truth : Public
+    System.Windows.Forms.RadioButton RadioOption1Truth : Public
+    System.Windows.Forms.Button ButtonCreateQuestion : Public
+    System.Windows.Forms.TextBox TextBoxExamId : Public
+    System.Windows.Forms.Button ButtonFinishCreateExam : Public
+    System.Windows.Forms.Panel panelManageExam : Public
+    System.Windows.Forms.TextBox TextBoxExamManageID : Public
+    System.Windows.Forms.Button ButtonExamIDgetter : Public
+    System.Windows.Forms.TextBox TextBoxAddedStudentsNumber : Public
+    System.Windows.Forms.Button ButtonAddStudent : Public
+    System.Windows.Forms.TextBox TextBoxAddStudentID : Public
+    System.Windows.Forms.TextBox TextBoxBannedStudentsNumber : Public
+    System.Windows.Forms.TextBox TextBoxBanStudentID : Public
+    System.Windows.Forms.Button ButtonBanStudent : Public
+    System.Windows.Forms.Button ButtonStartExamTime : Public
+    System.Windows.Forms.TextBox TextBoxScoreGetter : Public
+Class AzmoonYar.Form1: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    AzmoonYar.Student st : Public
+    AzmoonYar.Manager mg : Public

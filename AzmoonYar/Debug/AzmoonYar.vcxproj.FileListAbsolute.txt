@@ -1,0 +1,5 @@
+F:\projects\TeamProject\AzmoonYar\AzmoonYar\Debug\AzmoonYar.vcxprojAssemblyReference.cache
+F:\projects\TeamProject\AzmoonYar\AzmoonYar\Debug\AzmoonYar.Form1.resources
+F:\projects\TeamProject\AzmoonYar\AzmoonYar\Debug\AzmoonYar.vcxproj.GenerateResource.cache
+F:\projects\TeamProject\AzmoonYar\AzmoonYar\Debug\AzmoonYar.Student.resources
+F:\projects\TeamProject\AzmoonYar\AzmoonYar\Debug\AzmoonYar.Manager.resources
